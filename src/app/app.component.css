@@ -1,0 +1,81 @@
+#canv {
+  position: "absolute";
+  margin-Left: "auto";
+  margin-Right: "auto";
+  top:100;
+  left:0;
+  right:80;
+  text-Align: "center";
+  z-index:10;
+  width:1000px;
+  height:1000px, 
+}
+/* .outer-overlay{
+  height: 480px;
+  width: 640px;
+  
+} */
+/* style={{
+  position: "absolute",
+  marginLeft: "auto",
+  marginRight: "auto",
+  top:100,
+  left:0,
+  right:80,
+  textAlign: "center",
+  zIndex:10,
+  width:"45vw",
+  height:"75vh",
+// border:'1px solid green'
+}} */
+
+#video{
+  /* margin: 2px solid black; */
+  position: absolute;
+  margin:auto;
+  top:100;
+  left: 0;
+  right: 80;
+  z-index: 9;
+  text-align: center;
+  width: 640px;
+  height: 480px;
+  transform: rotateY(180deg);
+  -webkit-transform:rotateY(180deg); /* Safari and Chrome */
+  -moz-transform:rotateY(180deg);
+}
+#inner-overlay{
+  top:50;
+  left: 0;
+  right: 80;
+  position: absolute;
+  z-index: 10;
+  margin: auto;
+  background-color: rgba(160, 156, 156, 0.3);
+  width:640px;
+  height: 480px;
+}
+#inner-overlay::after{
+  content: '';
+  position: absolute;
+  left:30%;
+  top:37%;
+  z-index: 10;
+  border-radius: 100%;
+  text-align: center;
+  border: 6px solid blue;
+  width:230px;
+  height: 260px;
+  box-shadow: 0px 0px 0px 200px rgba(160, 156, 156, 0.4);
+}
+
+
+canvas{
+  position: absolute;
+  /* top: 16rem;
+  left: 33rem; */
+}
+video{
+ margin-top:7rem; 
+ margin-left:24rem; 
+}
